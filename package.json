@@ -1,10 +1,10 @@
 {
-  "name": "vite-demo-4",
+  "name": "hubble-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.4",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && cp src/index.d.ts dist/vite-components.es.d.ts",
     "preview": "vite preview"
   },
   "dependencies": {

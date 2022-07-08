@@ -13,10 +13,13 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import dayjs from "dayjs";
-let currentDateTime = ref(dayjs().format("YYYY-MM-DD HH:mm:ss"));
+const props = defineProps({
+  format: String
+})
+let currentDateTime = ref(dayjs().format(props.format));
 
 setInterval(() => {
-  currentDateTime.value = dayjs().format("YYYY-MM-DD HH:mm:ss");
+  currentDateTime.value = dayjs().format(props.format);
 }, 1000);
 </script>
 

@@ -8,9 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Currenttime: typeof import('./src/components/currenttime/index.vue')['default']
-    ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
   }
 
 }
