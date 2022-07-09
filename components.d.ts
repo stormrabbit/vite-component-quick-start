@@ -7,7 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Currenttime: typeof import('./src/components/currenttime/index.vue')['default']
     ElCard: typeof import('element-plus/es')['ElCard']
   }
 
