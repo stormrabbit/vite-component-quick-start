@@ -1,5 +1,5 @@
 {
-  "name": "hubble-components",
+  "name": "vite-components",
   "private": true,
   "version": "0.0.4",
   "main": "./dist/vite-components.umd.js",
